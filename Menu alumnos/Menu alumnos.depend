@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1582128780 source:c:\users\abian\desktop\hola\menu alumnos\main.c
+	<stdio.h>
+	<stdlib.h>
+

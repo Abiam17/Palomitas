@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1582734113 source:c:\users\abian\desktop\hola\popcorn\main.c
+	<stdio.h>
+	<stdlib.h>
+
