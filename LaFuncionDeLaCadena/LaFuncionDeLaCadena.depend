@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1583517028 source:c:\users\abian\desktop\hola\lafunciondelacadena\main.c
+	<stdio.h>
+	<string.h>
+
