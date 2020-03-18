@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdio.h>
 #include <time.h>
+
 
 
 const int LADOS = 6;
@@ -10,7 +10,7 @@ int main() {
 	int sum3=0, sum4=0, sum5=0, sum6=0, sum7=0, sum8=0, sum9=0, sum10=0, sum11=0, sum12=0;
 	char c;
 	srand(time(0));
-	do {
+	for (int contador = 0; contador <72000; contador++){
 		num1 = rand() % LADOS + 1;
         num2 = rand() % LADOS + 1;
 		printf("Se tiran los dados \n");
@@ -61,7 +61,7 @@ int main() {
         }
         }
         }
-	} while (contador <36000);
+	}
 	printf("Resultados  \n");
 	printf("Las veces qe la suma fue 2 es:  %d\n", sum2);
 	printf("Las veces qe la suma fue 3 es:  %d\n", sum3);
