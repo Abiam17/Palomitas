@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1588263284 source:c:\users\abian\desktop\codebloxe\correos\main.c
+	<stdlib.h>
+	<stdio.h>
+
