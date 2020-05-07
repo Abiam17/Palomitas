@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1588819946 source:c:\users\abian\desktop\codebloxe\persona_archivo_abrir\main.c
+	<stdio.h>
+	<unistd.h>
+	<stdlib.h>
+

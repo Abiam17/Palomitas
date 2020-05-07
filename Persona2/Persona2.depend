@@ -1,4 +1,6 @@
 # depslib dependency file v1.0
-1588693313 source:c:\users\abian\desktop\codebloxe\persona2\main.c
+1588819443 source:c:\users\abian\desktop\codebloxe\persona2\main.c
 	<stdio.h>
+	<unistd.h>
+	<stdlib.h>
 
