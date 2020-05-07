@@ -1,16 +1,28 @@
-    #include <stdio.h>
-    #include <unistd.h>
-    #include <stdlib.h>
+#include <stdio.h>
+void pruena() {
+ unsigned char a;
 
-    typedef struct persona
+ FILE *filepers;
+
+ filepers = fopen("personas.txt", "r");
+
+ while (!feof(filepers)){
+    a=fgetc(filepers);
+
+    printf("  %02x\n",a);
+ }
+ fclose(filepers);
+ }
+
+
+typedef struct persona
 {
-    unsigned long int id_persona;
-    char nombre[100];
-    char sexo;
-    char direccion[100], religion[50], escolaridad[20];
-    unsigned short int edad;
-}
-    Persona;
+ unsigned long int id_persona;
+ char nombre[100];
+ char sexo;
+ char direccion[100], religion[50], escolaridad[20];
+ unsigned short int edad;
+}  Persona;
     int N=0;
     int main(int argc, char const *argv [])
 {
@@ -19,13 +31,8 @@
     char c;
 
     FILE *aarchivo;
-    aarchivo = fopen ("persona.txt", "r");
-    if(access("persona.txt", F_OK) != -1){
-    aarchivo = fopen ("persona.txt", "r");
-     c=fgetc(aarchivo);
-    printf("  %02x\n",c); }
-    else{
-    aarchivo = fopen("persona.txt", "wt");
+
+    aarchivo = fopen("personas.txt", "wt");
 
     if(aarchivo == NULL) {
     printf("Error: No se ha podido crear el fichero persona.txt");
@@ -60,8 +67,9 @@
     fprintf(aarchivo,"%d",array_de_personas[0].edad);
     N = N+1;
 
-    }while(N<1) ;
+    }while(N<10) ;
     fclose(aarchivo);
-    }
-    }
+  }
+
+
 }

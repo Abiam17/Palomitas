@@ -19,10 +19,7 @@
     char c;
 
     FILE *aarchivo;
-    aarchivo = fopen ("persona.txt", "r+");
-    if(access("persona.txt", F_OK) != -1){
-    aarchivo = fopen ("persona.txt", "rb");}
-    else{
+
     aarchivo = fopen("persona.txt", "wt");
 
     if(aarchivo == NULL) {
