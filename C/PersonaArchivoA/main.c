@@ -49,7 +49,7 @@ int main()
     scanf("%hu", &struct_pers[cont].edad);
     fflush(stdin);
     cont++;
-  } while(cont<1);
+  } while(cont<10);
   aarchivo = fopen("persona.bin", "w");
   if(aarchivo == NULL)
   {
